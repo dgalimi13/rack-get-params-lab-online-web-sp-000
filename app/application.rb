@@ -28,8 +28,8 @@ class Application
       @@cart << search_term
       resp.write "added #{search_term}"
     else
-      if @@items.!include?(search_term)
-      resp.write "we do not have that item"
+      
+      resp.write "We do not have that item"
     end
     
     
