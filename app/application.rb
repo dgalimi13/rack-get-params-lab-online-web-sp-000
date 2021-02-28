@@ -26,6 +26,7 @@ class Application
     
     if @@items.include?(search_term)
       @@cart << search_term
+      puts "added #{search term}"
     else
       puts "we do not have that item"
     end
