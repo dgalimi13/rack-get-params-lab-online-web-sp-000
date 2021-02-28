@@ -27,7 +27,7 @@ class Application
     resp.write handle_search(search_term)
     if @@items.include?(search_term)
       @@cart << search_term
-      puts "added #{search term}"
+      puts "added #{search_term}"
     else
       puts "we do not have that item"
     end
