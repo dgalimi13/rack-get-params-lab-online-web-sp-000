@@ -26,9 +26,9 @@ class Application
     search_term = req.params["item"]
     if @@items.include?(search_term)
       @@cart << search_term
-      puts "added #{search_term}"
+      resp.write "added #{search_term}"
     else
-      puts "we do not have that item"
+      resp.write "we do not have that item"
     end
     
     
