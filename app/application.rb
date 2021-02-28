@@ -29,7 +29,7 @@ class Application
       resp.write "added #{search_term}"
     else
       
-      resp.write "We do not have that item"
+      resp.write "We don't have that item"
     end
     
     
